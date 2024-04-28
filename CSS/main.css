@@ -4,7 +4,7 @@ body {
 }
 
 .container0 {
-	max-width: 1400px;
+	width: 1400px;
 	height: 100vh;
 }
 
@@ -44,6 +44,27 @@ body {
 	height: 2px; /* Высота линии */
 	background-color: #cc8b86; /* Цвет подчеркивания при появлении линии*/
 	transition: width 0.5s; /* Время эффекта */
+}
+
+@media screen and (max-width: 1400px) {
+	.container0 {
+		max-width: 1000px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.container0 {
+		max-width: 768px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container0 {
+		max-width: 480px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container0 {
+		max-width: 100%;
+	}
 }
 
 .header {
@@ -539,6 +560,9 @@ body {
 .circle-left:hover {
 	border-radius: 20%;
 	transition: 0.3s linear;
+	transform: scale(
+		1.2
+	); /* увеличит размер иконки при наведение курсора на него*/
 }
 .circle-right {
 	display: inline-flex;
@@ -555,6 +579,9 @@ body {
 .circle-right:hover {
 	border-radius: 20%;
 	transition: 0.3s linear;
+	transform: scale(
+		1.2
+	); /*увеличит размер иконки при наведение курсора на него*/
 }
 
 .background1 {
